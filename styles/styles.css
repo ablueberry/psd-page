@@ -164,8 +164,10 @@ body {
 
 /* headery sie powtarzają - to samo css */
 .aside {
-  width: 15rem;
+  width: 20%;
   margin-left: 2rem; 
+  display: block;
+  float: left;
 }
 
   .about {
@@ -237,11 +239,6 @@ body {
       margin: 10px;
     }
 
-
-  .currency {
-
-  }
-
     .currency__header {
       font-family: "League Gothic";
       color: #069;
@@ -279,3 +276,199 @@ body {
       content: url('./../assets/img/arrowdown.png');
       margin: auto;
     }
+
+
+/*------------------*\
+        Main
+\*------------------*/
+
+.main {
+  display: block;
+  float: left;
+  width: 70%;
+}
+
+  .article-pinned {
+    border-style: dotted;
+    border-color: gray;
+    border-width: 1px;
+    border-top: solid #39f 3px;
+    width: 50rem;
+    padding-bottom: 1rem;
+  }
+
+    .article-pinned__header {
+      font-family: "League Gothic";
+      color: #069;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      margin: 2rem 1rem 1rem 1rem;
+    }
+
+    .article-pinned__data--round {
+      display: inline-block;
+      margin-left: 0.5rem;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 3rem;
+      -webkit-border-radius: 3rem;
+      -moz-border-radius: 3rem;
+      background-color: #39f;
+      font-size: 0.6rem;
+      text-align: center;
+      color: white;
+      font-weight: 700;
+      float: left;
+
+    }
+
+    .article-pinned__data--round h5 {
+      position: relative;
+      top: 1rem;
+    }
+
+    .article-pinned__data--person {
+      background-image: url('./../assets/img/user-mock.png');
+      background-position: center;
+      background-size: cover;
+      
+    }
+
+    .article-pinned p {
+      font-size: 0.6rem;
+      line-height: 1.5rem;
+      display: inline;
+      float: left;
+      width: 38rem;
+      margin: 0 2rem 0.5rem 2rem;
+    }
+
+    .article-pinned__ribbon {
+
+    }
+
+    .article-pinned__button {
+      margin: 2rem 8rem;
+      color: white;
+      font-size: 0.6rem;
+      text-shadow: 0px -1px #699;
+      background-image: url('./../assets/img/active.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 0.4rem 1.6rem;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+    }
+
+  .article {
+    width: 24rem;
+    float: left;
+    margin: 1rem 0.5rem 1rem;
+    font-size: 0.6rem;
+    border-radius: 33px 0px 0px 0px;
+    -moz-border-radius: 33px 0px 0px 0px;
+    -webkit-border-radius: 33px 0px 0px 0px;
+    border: 0px solid #000000;
+    background-color: #dadada;
+  }
+
+    .article__header {
+      font-family: "League Gothic";
+      color: #069;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      padding: 0 1rem;
+    }
+
+    .article__data {
+      font-size: 0.6rem;
+      margin: 0 0 1rem 0;
+      padding: 0 1rem;
+
+    }
+
+   .article p {
+    line-height: 1rem;
+    padding: 0 1rem;
+
+    }
+
+  .article a {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+    .article__footer {
+      float: right;
+      background-color: #f6f6f6;
+      padding: 0.5rem 0; 
+    }
+
+    .article__footer > *{
+      display: inline-;
+      float: left;
+    }
+
+  .ad {
+    clear: both;
+    width: 48rem;
+    margin: 1rem;
+    height: 5rem;
+    background-color: #dadada;
+  }
+
+
+.map {
+  clear: both;
+  margin: 2rem 0;
+  border-top: dotted gray 1px;
+
+}
+
+.map h2 {
+  font-family: "League Gothic";
+      color: #069;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+     padding: 1rem 2rem;
+}
+
+.footer {
+      text-transform: uppercase;
+      font-size: 0.6rem;
+}
+
+.footer__top {
+  padding: 1.5rem 0;
+}
+.footer__top > *{
+  display: inline;
+}
+
+.footer__top h6 {
+  font-family: "League Gothic";
+  color: #069;
+  font-size: 1rem;
+  padding: 0 2rem;
+}
+
+.footer__top li {
+  display: inline;
+  padding: 0 1rem;
+
+}
+.footer__top nav {
+  float: right;
+  margin-right: 2rem; 
+}
+
+.footer__bottom {
+  margin: 0 2rem;
+  padding: 1.5rem;
+  border-top: dotted gray 1px;
+}
+.footer__bottom h6 {
+      text-align: center;
+}
