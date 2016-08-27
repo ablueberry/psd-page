@@ -161,6 +161,8 @@ body {
         Aside
 \*------------------*/
 
+
+/* headery sie powtarzają - to samo css */
 .aside {
   width: 15rem;
   margin-left: 2rem; 
@@ -229,8 +231,51 @@ body {
 
     .post__comments::before {
       content: url('./../assets/img/speachbubbles.png');
-      -webkit-filter: invert(80%); /* Chrome, Safari, Opera */
+      -webkit-filter: invert(80%);
       filter: invert(80%);
       opacity: 0.2;
       margin: 10px;
+    }
+
+
+  .currency {
+
+  }
+
+    .currency__header {
+      font-family: "League Gothic";
+      color: #069;
+      text-transform: uppercase;
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+
+    th, td {
+      padding: 0.5rem;
+      font-size: 0.7rem;
+      border: solid 1px white;
+    }
+
+    tr {
+      background-color: #9cf;
+      color: #069;
+    }
+
+    tr:nth-child(even) {
+      background-color: #cff;
+    }
+
+    th {
+      background-color: #069;
+      color: white;
+    }
+
+    .up {
+      content: url('./../assets/img/arrowup.png');
+      margin: auto;
+    }
+
+    .down {
+      content: url('./../assets/img/arrowdown.png');
+      margin: auto;
     }
