@@ -1,0 +1,236 @@
+* {
+/*  box-sizing: border-box;*/
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Arial";
+}
+
+.text-accent {
+  color: #39f;
+}
+
+
+/*------------------*\
+        Header
+\*------------------*/
+
+.header {
+  width: 100%;
+}
+
+  .header__heading {
+    margin: 1rem auto 1.5rem auto;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: #069;
+    text-transform: uppercase;
+    font-family: "League Gothic";
+  }
+
+  .header__nav {
+    text-align: center;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+
+    .header__nav__element {
+      display: inline;
+      margin: 0.75rem;
+      padding: 1rem;
+    }
+
+
+    /*  Fix this  */
+    .header__nav__element--current {
+      color: white;
+      text-shadow: 0px -1px #699;
+      background-image: url('./../assets/img/active.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 0.4rem 1.6rem;
+      -webkit-border-radius: 1px;
+      -moz-border-radius: 1px;
+      border-radius: 1px;
+    }
+
+   /*  Fix this  */
+  .header__social-icons {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem 3rem;
+  }
+
+    .header__social-icons__icon img{
+      padding: 0 6px 0 0;
+    }
+
+
+/*------------------*\
+      Jumbotron
+\*------------------*/
+
+.jumbotron {
+  margin: 1.5rem 0;
+  background-image: url('./../assets/img/background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-style: solid;
+  border-color: #39f;
+  border-width: 3px 0;
+  text-align: center;
+
+}
+  .jumbotron__header {
+    font-family: "League Gothic";
+    color: #069;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+ }
+
+  .jumbotron__header--primary {
+    margin: 7rem auto 1.5rem auto;
+    padding: 1rem 2.5rem;
+    line-height: 4rem;
+    font-size: 4.7rem;
+  }
+
+  .jumbotron__header--secondary {
+    margin: 0 auto 7rem auto;
+    padding: 1rem 2rem;
+    font-size: 2.3rem;
+    line-height: 2rem;
+    letter-spacing: 0px;
+    word-spacing: 1px;
+  }
+
+  .jumbotron__footer {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+  }
+
+    .card {
+      display: inline;
+      position: relative;
+      margin: 0 5rem 0 0;
+    }
+
+      .card__img {
+        width: 6rem;
+        height: 6rem;
+        position: absolute;
+        border-radius: 6rem;
+        -webkit-border-radius: 6rem;
+        -moz-border-radius: 6rem;
+        z-index: 1;
+      }
+
+      .card__text-tile {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 6rem;
+
+        position: relative;
+        left: 3rem;
+        top: 0;
+        padding: 1rem 1rem 1rem 4rem;
+      }
+
+        .card__text-tile p {
+          font-size: 0.6rem;
+          font-style: italic;
+          font-weight: 700;
+          line-height: 1rem;
+        }
+
+        .card__text-tile .secondary {
+          font-style: initial;
+          font-weight: 400;
+        }
+
+
+/*------------------*\
+        Aside
+\*------------------*/
+
+.aside {
+  width: 15rem;
+  margin-left: 2rem; 
+}
+
+  .about {
+    border-bottom: 1px dotted gray;
+    padding: 0 1rem 1rem 0;
+  }
+
+    .about__header {
+      font-family: "League Gothic";
+      color: #069;
+      text-transform: uppercase;
+      font-size: 2rem;
+      margin-bottom: 1.5rem; 
+    }
+
+    .about p {
+      line-height: 1.5rem;
+      font-size: 0.7rem;
+    }
+
+
+.posts {
+  border-bottom: 1px dotted gray;
+  padding: 0 1rem 1rem 0;
+}
+  
+  .posts__header {
+    font-family: "League Gothic";
+    color: #069;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  .post {
+    line-height: 1.5rem;
+    position: relative;
+    margin: 1rem 0;
+  }
+
+    .post__img {
+      width: 4rem;
+      height: 3rem;
+      display: inline-block;
+    }
+
+    .post__title {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      position: absolute;
+      top: 0;
+      left: 5rem;
+    }
+
+    .post__comments {
+      font-size: 0.7rem;
+      position: absolute;
+      top: 1.5rem;
+      left: 5rem;
+      font-style: italic;
+    }
+
+    .post__comments::before {
+      content: url('./../assets/img/speachbubbles.png');
+      -webkit-filter: invert(80%); /* Chrome, Safari, Opera */
+      filter: invert(80%);
+      opacity: 0.2;
+      margin: 10px;
+    }

@@ -2,62 +2,70 @@
 <html>
 <head>
 	<title>POZNAN - CITY2LIVE</title>
+  <!-- Fonts -->
+  <link rel="stylesheet" href="./assets/fonts/league-gothic/webfonts/stylesheet.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
 	<!-- Header -->
-	<header>
-		<h2>Poz<span class="accent">nan</span> - city<span class="accent">2</span>live</h2>
-		<nav>
+	<header class="header">
+
+		<h2 class="header__heading">Poz<span class="text-accent">nan</span> - city<span class="text-accent">2</span>live</h2>
+
+    <!-- Navigation -->
+		<nav class="header__nav">
 			<ul>
-				<li class="current">Home</li>
-				<li>Product</li>
-				<li>Services</li>
-				<li>Contact</li>
+				<li class="header__nav__element  header__nav__element--current">Home</li>
+				<li class="header__nav__element">Product</li>
+				<li class="header__nav__element">Services</li>
+				<li class="header__nav__element">Contact</li>
 			</ul>
 		</nav>
-		<!-- social icons -->
-		<div>
-			<a href="#"><img src="./assets/img/evernote.png"></a>
-			<a href="#"><img src="./assets/img/twitter.png"></a>
-			<a href="#"><img src="./assets/img/pinterest.png"></a>
-			<a href="#"><img src="./assets/img/linked.png"></a>
-			<a href="#"><img src="./assets/img/fb.png"></a>
-			<a href="#"><img src="./assets/img/delicious.png"></a>
+
+		<!-- Social icons -->
+		<div class="header__social-icons">
+			<a href="#" class="header__social-icons__icon"><img src="./assets/img/social-icons/evernote.png"></a>
+			<a href="#" class="header__social-icons__icon"><img src="./assets/img/social-icons/twitter.png"></a>
+			<a href="#" class="header__social-icons__icon"><img src="./assets/img/social-icons/pinterest.png"></a>
+			<a href="#" class="header__social-icons__icon"><img src="./assets/img/social-icons/linked.png"></a>
+			<a href="#" class="header__social-icons__icon"><img src="./assets/img/social-icons/fb.png"></a>
+			<a href="#" class="header__social-icons__icon"><img src="./assets/img/social-icons/delicious.png"></a>
 		</div>
+
 	</header>
 
-	<!-- Main panel -->
-	<section class="jumbotron">
-		<h1>Visit Poz<span class="accent">nan</span></h1>
-		<h2>A city on the <span class="accent">Warta</span> river in west-central <span class="accent">Poland</span>, the Region called <span class="accent">greater Poland</span></h2>
 
-		<!--  Reference panel -->
-		<div class="jumbotron-footer">
-			<!-- People -->
+	<section class="jumbotron">
+		<div class="jumbotron__header jumbotron__header--primary"><h1>Visit Poz<span class="text-accent">nan</span></h1></div>
+		<div class="jumbotron__header jumbotron__header--secondary"><h2>A city on the <span class="text-accent">Warta</span> river in west-central <span class="text-accent">Poland</span>, the Region called <span class="text-accent">greater Poland.</span></h2></div>
+
+		<div class="jumbotron__footer">
 			<div class="card">
-				<img src="./assets/img/user-mock.png">
-				<div class="text-tile">
+				<img src="http://placekitten.com/g/200/200" class="card__img">
+				<div class="card__text-tile">
 					<p>I was in Poznan once. The architecture is really awesome.</p>
 					<p class="secondary">Joe Wisdom, architect</p>
 				</div>
 			</div>
 			<div class="card">
-				<img src="./assets/img/user-mock.png">
-				<div class="text-tile">
+				<img src="http://placekitten.com/g/200/200" class="card__img">
+				<div class="card__text-tile">
 					<p>I was in lost in Poznan for 3 days. I was terrified.</p>
 					<p class="secondary">Little Box, child</p>
 				</div>
 			</div>
 			<div class="card">
-				<img src="./assets/img/user-mock.png">
-				<div class="text-tile">
+				<img src="http://placekitten.com/g/200/200" class="card__img">
+				<div class="card__text-tile">
 					<p>People used to look at me now they don't see me.</p>
 					<p class="secondary">Eva Doe, exmodel</p>
 				</div>
 			</div>
 			<div class="card">
-				<img src="./assets/img/user-mock.png">
-				<div class="text-tile">
+				<img src="http://placekitten.com/g/200/200" class="card__img">
+				<div class="card__text-tile">
 					<p>I have a lot of penfriends in Poznan. I like writting to them and...</p>
 					<p class="secondary">Emma Smith, child</p>
 				</div>
@@ -65,33 +73,32 @@
 		</div>
 	</section> 
 
-	<!-- Aside -->
-	<aside>
+	<aside class="aside">
 		<div class="about">
-			<h3>About author</h3>
+			<h3 class="about__header">About author</h3>
 			<p>
-				<span class="accent">John Doe</span> - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<span class="text-accent">John Doe</span> - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. 
 			</p>
 		</div>
 		<div class="posts">
-			<h3>Related posts</h3>
+			<h3 class="posts__header">Related posts</h3>
 			<div class="post">
-				<img src="./assets/img/photo-mock.png">
-				<h4>Poznan at night</h4>
-				<h5 class="comments">10 Comments</h5>
+				<img src="http://placekitten.com/g/300/200" class="post__img">
+				<h4 class="post__title">Poznan at night</h4>
+				<h5 class="post__comments">10 Comments</h5>
 			</div>
 			<div class="post">
-				<img src="./assets/img/photo-mock.png">
-				<h4>People to meet</h4>
-				<h5 class="comments">21 Comments</h5>
+				<img src="http://placekitten.com/g/300/200" class="post__img">
+				<h4 class="post__title">People to meet</h4>
+				<h5 class="post__comments">21 Comments</h5>
 			</div>
 			<div class="post">
-				<img src="./assets/img/photo-mock.png">
-				<h4>Visit our office</h4>
-				<h5 class="comments">17 Comments</h5>
+				<img src="http://placekitten.com/g/300/200" class="post__img">
+				<h4 class="post__title">Visit our office</h4>
+				<h5 class="post__comments">17 Comments</h5>
 			</div>
 		</div>
 		<div class="currency">
@@ -125,8 +132,7 @@
 		</div>
 	</aside>
 
-	<!-- Main section -->
-	<section class="main">
+	<!--<section class="main">
 		<div class="important-post">
 			<h2>Why should you come to Poznan</h2>
 			<div class="round">11 Nov 2013</div>
@@ -146,12 +152,12 @@
 
 		<div class="post-card">
 			<h3>New attractions</h3>
-			<h5>Posted by <span class="accent">John Doe</span> on <span class="accent">10 Nov 2013</span></h5>
+			<h5>Posted by <span class="text-accent">John Doe</span> on <span class="text-accent">10 Nov 2013</span></h5>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat.</p>
-			<h5 class="accent">more...</h5>
+			<h5 class="text-accent">more...</h5>
 			<div>
 				<img src="./assets/img/like.png">
 				<p>12</p>
@@ -162,12 +168,12 @@
 
 		<div>
 			<h3>Let's meet on old market square it will be fun</h3>
-			<h5>Posted by <span class="accent">John Doe</span> on <span class="accent">09 Nov 2013</span></h5>
+			<h5>Posted by <span class="text-accent">John Doe</span> on <span class="text-accent">09 Nov 2013</span></h5>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat.</p>
-			<h5 class="accent">more...</h5>
+			<h5 class="text-accent">more...</h5>
 			<div>
 				<img src="./assets/img/like.png">
 				<p>56</p>
@@ -179,7 +185,6 @@
 		<div class="ad-mock">your ad here</div>
 	</section>
 
-	<!-- Map section -->
 	<section class="map">
 		<h2>Where can I find more information</h2>
 		<div class="google-maps-mock"></div>
@@ -187,7 +192,7 @@
 
 	<footer>
 		<div class="top">
-			<h6>Poz<span class="accent">nan</span> - city<span class="accent">2</span>live</h6>
+			<h6>Poz<span class="text-accent">nan</span> - city<span class="text-accent">2</span>live</h6>
 			<nav>
 				<ul>
 					<li>Home</li>
@@ -200,6 +205,6 @@
 		<div class="bottom">
 			<h6>All rights reserved 2013</h6>
 		</div>
-	</footer>
+	</footer> -->
 </body>
 </html>
