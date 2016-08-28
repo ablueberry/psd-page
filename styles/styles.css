@@ -1,5 +1,5 @@
 * {
-/*  box-sizing: border-box;*/
+  box-sizing: border-box;
 }
 
 body {
@@ -66,8 +66,8 @@ body {
     margin: 1rem 1rem;
   }
 
-    .header__social-icons__icon img{
-      padding: 0 6px 0 0;
+    .header__social-icons__icon img { 
+      margin: 0 6px 0 0;
       width: 1.1rem;
       height: 1.1rem;
     }
@@ -88,6 +88,9 @@ body {
   border-width: 3px 0;
   text-align: center;
 }
+  .header-container {
+    padding: 0 10rem;
+  }
 
   .jumbotron__header {
     font-family: "League Gothic";
@@ -104,6 +107,9 @@ body {
     font-size: 4rem;
   }
 
+
+
+
   .jumbotron__header--secondary {
     margin: 0 auto 6rem auto;
     padding: 0.8rem 2rem;
@@ -116,34 +122,37 @@ body {
   .jumbotron__footer {
     text-align: left;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 2rem;
+    width: 100%;
+    padding: 2rem 1rem;
+
   }
 
     .card {
       display: inline;
       position: relative;
-      margin: 0 5rem 0 0;
     }
 
       .card__img {
-        width: 6rem;
-        height: 6rem;
-        position: absolute;
-        border-radius: 6rem;
-        -webkit-border-radius: 6rem;
-        -moz-border-radius: 6rem;
+        width: 5rem;
+        height: 5rem;
+        position: relative;
+        border-radius: 5rem;
+        -webkit-border-radius: 5rem;
+        -moz-border-radius: 5rem;
+        top: 0.1rem;
         z-index: 1;
       }
 
       .card__text-tile {
         display: inline-block;
         background-color: rgba(255, 255, 255, 0.7);
-        width: 6rem;
-
         position: relative;
-        left: 3rem;
-        top: 0;
-        padding: 1rem 1rem 1rem 4rem;
+        padding: 0.5rem 0.5rem 0.5rem 3rem;
+        max-width: 13rem;
+        height: 5rem;
+        max-height: 5rem;
+        top: -1.5rem;
+        left: -2.5rem;
       }
 
         .card__text-tile p {
@@ -264,7 +273,7 @@ body {
     }
 
     th, td {
-      padding: 0.5rem;
+      padding: 0.4rem 0.5rem;
       font-size: 0.7rem;
       border: solid 1px white;
     }
