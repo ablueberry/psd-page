@@ -22,9 +22,9 @@ body {
 }
 
   .header__heading {
-    margin: 1rem auto 1.5rem auto;
+    margin: 1rem auto 1rem auto;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     line-height: 2.5rem;
     color: #069;
     text-transform: uppercase;
@@ -39,8 +39,7 @@ body {
 
     .header__nav__element {
       display: inline;
-      margin: 0.75rem;
-      padding: 1rem;
+      padding: 1.2rem;
     }
 
 
@@ -52,10 +51,11 @@ body {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      padding: 0.4rem 1.6rem;
-      -webkit-border-radius: 1px;
-      -moz-border-radius: 1px;
-      border-radius: 1px;
+      margin: 0 1rem;
+      padding: 0.3rem 1.6rem;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
     }
 
    /*  Fix this  */
@@ -63,11 +63,13 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    margin: 1rem 3rem;
+    margin: 1rem 1rem;
   }
 
     .header__social-icons__icon img{
       padding: 0 6px 0 0;
+      width: 1.1rem;
+      height: 1.1rem;
     }
 
 
@@ -76,7 +78,7 @@ body {
 \*------------------*/
 
 .jumbotron {
-  margin: 1.5rem 0;
+  margin: 1.3rem 0;
   background-image: url('./../assets/img/background.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -85,27 +87,27 @@ body {
   border-color: #39f;
   border-width: 3px 0;
   text-align: center;
-
 }
+
   .jumbotron__header {
     font-family: "League Gothic";
     color: #069;
     text-transform: uppercase;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     display: inline-block;
  }
 
   .jumbotron__header--primary {
-    margin: 7rem auto 1.5rem auto;
-    padding: 1rem 2.5rem;
+    margin: 6rem auto 1.5rem auto;
+    padding: 0.8rem 2.5rem;
     line-height: 4rem;
-    font-size: 4.7rem;
+    font-size: 4rem;
   }
 
   .jumbotron__header--secondary {
-    margin: 0 auto 7rem auto;
-    padding: 1rem 2rem;
-    font-size: 2.3rem;
+    margin: 0 auto 6rem auto;
+    padding: 0.8rem 2rem;
+    font-size: 2rem;
     line-height: 2rem;
     letter-spacing: 0px;
     word-spacing: 1px;
@@ -165,27 +167,33 @@ body {
 /* headery sie powtarzają - to samo css */
 .aside {
   width: 20%;
-  margin-left: 2rem; 
+  margin-left: 2.5rem; 
   display: block;
   float: left;
 }
 
   .about {
     border-bottom: 1px dotted gray;
-    padding: 0 1rem 1rem 0;
+    padding: 1rem 1.5rem 1.5rem 0;
   }
 
     .about__header {
       font-family: "League Gothic";
       color: #069;
       text-transform: uppercase;
-      font-size: 2rem;
-      margin-bottom: 1.5rem; 
+      font-size: 1.5rem;
+      margin-bottom: 1rem; 
     }
 
     .about p {
       line-height: 1.5rem;
       font-size: 0.7rem;
+    }
+
+    .about .text-accent {
+      color: #069;
+      font-size: 0.7rem;
+      font-weight: 700;
     }
 
 
@@ -198,14 +206,15 @@ body {
     font-family: "League Gothic";
     color: #069;
     text-transform: uppercase;
-    font-size: 2rem;
-    margin: 1rem 0;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem; 
   }
 
   .post {
-    line-height: 1.5rem;
     position: relative;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    line-height: 1.5rem;
   }
 
     .post__img {
@@ -215,7 +224,7 @@ body {
     }
 
     .post__title {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       text-transform: uppercase;
       font-weight: 700;
       position: absolute;
@@ -236,15 +245,22 @@ body {
       -webkit-filter: invert(80%);
       filter: invert(80%);
       opacity: 0.2;
-      margin: 10px;
+      margin: 0.2rem;
+      position: relative;
+      top: 0.4rem;
     }
+
+  .currency {
+    padding-bottom: 1rem;
+  }
 
     .currency__header {
       font-family: "League Gothic";
       color: #069;
       text-transform: uppercase;
-      font-size: 2rem;
-      margin: 1rem 0;
+      font-size: 1.5rem;
+      margin-bottom: 1rem; 
+      margin-top: 1.5rem;
     }
 
     th, td {
@@ -422,26 +438,28 @@ body {
 
 .map {
   clear: both;
-  margin: 2rem 0;
-  border-top: dotted gray 1px;
+  margin: 2rem 0 0 0 ;
 
 }
 
 .map h2 {
+  border-top: dotted gray 1px;
   font-family: "League Gothic";
       color: #069;
       text-transform: uppercase;
       font-size: 2.5rem;
      padding: 1rem 2rem;
+     margin: 0 1.5rem;
 }
 
 .footer {
       text-transform: uppercase;
       font-size: 0.6rem;
+      margin: 1rem 0;
 }
 
 .footer__top {
-  padding: 1.5rem 0;
+  padding: 0 0 1rem 0;
 }
 .footer__top > *{
   display: inline;
@@ -450,7 +468,7 @@ body {
 .footer__top h6 {
   font-family: "League Gothic";
   color: #069;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0 2rem;
 }
 
@@ -461,14 +479,15 @@ body {
 }
 .footer__top nav {
   float: right;
-  margin-right: 2rem; 
+  margin: 0.5rem 2rem 0 0; 
 }
 
 .footer__bottom {
-  margin: 0 2rem;
-  padding: 1.5rem;
+  padding: 1rem 0 0 0;
   border-top: dotted gray 1px;
+  margin: 0 1.5rem;
 }
 .footer__bottom h6 {
       text-align: center;
+      font-size: 0.7rem;
 }
