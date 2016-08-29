@@ -310,15 +310,19 @@ body {
 .main {
   display: block;
   float: left;
-  width: 70%;
+  width: 75%;
 }
 
+.other-articles {
+  padding-bottom: 1.5rem; 
+  border-left: dotted gray 1px;
+}
   .article-pinned {
     border-style: dotted;
     border-color: gray;
     border-width: 1px;
     border-top: solid #39f 3px;
-    width: 50rem;
+    width: 100%;
     padding-bottom: 1rem;
   }
 
@@ -388,60 +392,74 @@ body {
     }
 
   .article {
-    width: 24rem;
+    width: 25rem;
     float: left;
-    margin: 1rem 0.5rem 1rem;
-    font-size: 0.6rem;
-    border-radius: 33px 0px 0px 0px;
-    -moz-border-radius: 33px 0px 0px 0px;
-    -webkit-border-radius: 33px 0px 0px 0px;
+    margin: 1rem 1rem 5rem 1rem;
+    border-radius: 1rem 0 0 0;
+    -moz-border-radius: 1rem 0 0 0;
+    -webkit-border-radius: 1rem 0 0 0;
     border: 0px solid #000000;
-    background-color: #dadada;
+    background-color: #EEEEEE;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+  }
+
+  .article > * {
+    padding:  0 2rem; 
   }
 
     .article__header {
       font-family: "League Gothic";
       color: #069;
       text-transform: uppercase;
-      font-size: 1.2rem;
-      margin: 1rem 0;
-      padding: 0 1rem;
+      font-size: 1.5rem;
+      margin: 2rem 0 0 0;
     }
 
     .article__data {
-      font-size: 0.6rem;
-      margin: 0 0 1rem 0;
-      padding: 0 1rem;
+      font-size: 0.7rem;
+    }
 
+    .article .text-accent {
+      color: #069;
     }
 
    .article p {
-    line-height: 1rem;
-    padding: 0 1rem;
-
+    margin: 2rem 0 0 0;
+    font-size: 0.7rem;
     }
 
   .article a {
-    padding: 0 1rem 1rem 1rem;
+    font-weight: 700;
   }
 
-    .article__footer {
+    .article__footer {      
+      width: 25rem;
       float: right;
       background-color: #f6f6f6;
       padding: 0.5rem 0; 
+      position: absolute
     }
 
     .article__footer > *{
-      display: inline-;
-      float: left;
+      display: inline;
+      position: relative;
+      left: 19rem;
+    }
+
+    .article__footer p {
+      margin: 0.2rem 0.4rem;
     }
 
   .ad {
     clear: both;
-    width: 48rem;
-    margin: 1rem;
+    width: 98%;
     height: 5rem;
-    background-color: #dadada;
+    margin: 0 1rem ;
+    background-color: #EEEEEE;
+    font-size: 0.7rem;
+    line-height: 5rem;
+    text-align: center;
   }
 
 
