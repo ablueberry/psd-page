@@ -316,32 +316,36 @@ body {
 .other-articles {
   padding-bottom: 1.5rem; 
   border-left: dotted gray 1px;
+  margin-top: -3rem; 
 }
   .article-pinned {
+  position: relative;
+  top: -3rem;
     border-style: dotted;
     border-color: gray;
     border-width: 1px;
     border-top: solid #39f 3px;
     width: 100%;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+    background-color: white;
   }
 
     .article-pinned__header {
       font-family: "League Gothic";
       color: #069;
       text-transform: uppercase;
-      font-size: 2.5rem;
+      font-size: 2.3rem;
       margin: 2rem 1rem 1rem 1rem;
     }
 
     .article-pinned__data--round {
       display: inline-block;
-      margin-left: 0.5rem;
-      width: 3rem;
-      height: 3rem;
-      border-radius: 3rem;
-      -webkit-border-radius: 3rem;
-      -moz-border-radius: 3rem;
+      margin: 0.3rem 0 0 1rem;
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 3.5rem;
+      -webkit-border-radius: 3.5rem;
+      -moz-border-radius: 3.5rem;
       background-color: #39f;
       font-size: 0.6rem;
       text-align: center;
@@ -352,40 +356,66 @@ body {
     }
 
     .article-pinned__data--round h5 {
+      font-size: 0.6rem;
+      padding: 0 0.5rem;
+      line-height: 0.8rem;
       position: relative;
       top: 1rem;
     }
 
     .article-pinned__data--person {
-      background-image: url('./../assets/img/user-mock.png');
+      background-image: url('./../assets/img/profile2.png');
       background-position: center;
-      background-size: cover;
-      
+      background-size: contain;   
+    }
+
+    .article-pinned__data--person h5 {
+      padding: 0 0.3rem;
     }
 
     .article-pinned p {
-      font-size: 0.6rem;
-      line-height: 1.5rem;
+      font-size: 0.7rem;
+      line-height: 1.3rem;
       display: inline;
       float: left;
       width: 38rem;
-      margin: 0 2rem 0.5rem 2rem;
+      margin: 0 0.5rem 2.3rem 2rem;
     }
 
     .article-pinned__ribbon {
+      position: absolute;
+      float: right;
+      bottom: 2rem;
+      right: -0.5rem;
+      width: 12rem;
+      font-size: 0.7rem;
+      background-color: #9cf;
+      display: inline-block;
+      padding: 0.3rem 0.3rem 0.3rem 1rem;
+      color: #069;
+    }
 
+    .article-pinned__ribbon > * {
+      display: inline;
+    }
+
+    .article-pinned__ribbon h6 {
+      padding: 0 0.3rem;
+      margin: 0;
+      display: inline;
     }
 
     .article-pinned__button {
-      margin: 2rem 8rem;
+      margin: 0 11rem;
       color: white;
       font-size: 0.6rem;
+      font-weight: 700;
       text-shadow: 0px -1px #699;
       background-image: url('./../assets/img/active.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      padding: 0.4rem 1.6rem;
+      padding: 0.6rem 1.3rem;
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       border-radius: 2px;
@@ -431,6 +461,7 @@ body {
 
   .article a {
     font-weight: 700;
+    line-height: 2rem;
   }
 
     .article__footer {      
@@ -456,10 +487,14 @@ body {
     width: 98%;
     height: 5rem;
     margin: 0 1rem ;
-    background-color: #EEEEEE;
     font-size: 0.7rem;
     line-height: 5rem;
     text-align: center;
+    background: #EEE; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#EEE, #f6f6f6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#EEE, #f6f6f6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#EEE, #f6f6f6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#EEE, #f6f6f6); /* Standard syntax */
   }
 
 
